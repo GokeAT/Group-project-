@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('setup') {
             steps {
-                sh "bash setup.sh"
+                sh "bash tf-aks-azure/setup.sh"
             }
         }
         stage('Test') {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh "bash deploy.sh"
+                sh "bash tf-aks-azure/deploy.sh"
             }
         }
     }
