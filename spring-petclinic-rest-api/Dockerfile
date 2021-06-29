@@ -3,10 +3,10 @@ COPY . /src
 WORKDIR /src
 RUN mvn install -DskipTests
 
-FROM openjdk:11.0.1-jre-slim-stretch
+FROM openjdk:8-jre-alpine AS runtime
 EXPOSE 9966
 WORKDIR /app
 ARG JAR=spring-petclinic-rest-2.4.2.jar
 
-COPY target/$JAR /app.jar
+COPY --from=BUILD /src/target/*.jar /app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
