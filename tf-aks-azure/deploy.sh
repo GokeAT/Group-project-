@@ -1,3 +1,3 @@
 #!/bin/bash 
 
-kubectl apply -f nginx.yaml
+kubectl apply -f tf-aks-azure/nginx.yaml
