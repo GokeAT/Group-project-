@@ -2,21 +2,25 @@ version: '3.3'
 services:
   proxy:
     container_name: proxy
-    image: wdennington/proxy:latest
+    #image: wdennington/proxy:latest
     build: ./nginx
     ports:
     - target: 80
       published: 80
+    volumes:
+    - type: bind
+      source: ./nginx/nginx.conf
+      target: /etc/nginx/nginx.conf
   backend:
     container_name: backend
-    image: wdennington/backend:latest
+    #image: wdennington/backend:latest
     build: ./spring-petclinic-rest-api
     ports:
     - target: 9966
       published: 9966
   frontend:
     container_name: frontend
-    image: wdennington/frontend:latest
+    #image: wdennington/frontend:latest
     build: ./spring-petclinic-angular
     ports:
     - target: 8081

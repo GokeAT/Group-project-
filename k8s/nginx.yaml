@@ -32,3 +32,10 @@ spec:
         image: wdennington/proxy:latest
         ports:
         - containerPort: 80
+        volumeMounts:
+        - name: nginx-config
+          mountPath: /etc/nginx/nginx.conf
+      volumes:
+      - name: nginx-config
+        configMap:
+          name: nginx-config
