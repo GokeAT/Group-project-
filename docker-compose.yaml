@@ -21,6 +21,12 @@ services:
     ports:
     - target: 8081
       published: 8081
+  database:
+    container_name: database
+    #image:
+    build: ./sql
+    environment:
+      MYSQL_ROOT_PASSWORD: petclinic
 
   
 
