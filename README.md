@@ -47,7 +47,8 @@ An initial jira board was made during deployment:
 
 ![jiraboard](https://user-images.githubusercontent.com/48153566/123998741-af70ef00-d9c9-11eb-8b4f-f42fcb62194e.png)
 
-A new Jira board was then created after deployment has been completed:
+
+A new Jira board was then created after deployment had been completed:
 
 
 ## Risk Assessment
