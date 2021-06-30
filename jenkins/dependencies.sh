@@ -23,11 +23,12 @@ sudo mv terraform /usr/local/bin/
 rm terraform_*_linux_*.zip
 
 #Installs Docker
-# curl https://get.docker.com | sudo bash
-# sudo groupadd docker
-# sudo usermod -aG docker jenkins
-# sudo su - jenkins
-# sudo newgrp docker
+curl https://get.docker.com | sudo bash
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
+sudo su - ${USER}
+sudo newgrp docker
+sudo apt install docker-compose
 
 #Installs Karma
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
