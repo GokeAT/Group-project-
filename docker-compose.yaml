@@ -21,6 +21,23 @@ services:
     ports:
     - target: 8081
       published: 8081
+  database:
+    container_name: database
+    image: wdennington/database:latest
+    build: ./database
+    environment:
+      MYSQL_USER: root
+      MYSQL_PASSWORD: petclinic
+      MYSQL_ROOT_PASSWORD: petclinic
+      MYSQL_DATABASE: petclinic
+    ports:
+    - target: 3306
+      published: 3306
+    # volumes:
+    # - type: bind
+    #   source:
+    #   target:
+
 
   
 
