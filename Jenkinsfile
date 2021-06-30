@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages{
-        stage('Setup'){
+        stage('Dependencies'){
             steps{
                 sh "bash jenkins/dependencies.sh"
             }
@@ -11,7 +11,7 @@ pipeline {
                 sh "bash jenkins/test.sh"
             }
         }
-        stage('Deploy') {
+        stage('Build') {
             steps {
                 sh "bash jenkins/build.sh"
             }
