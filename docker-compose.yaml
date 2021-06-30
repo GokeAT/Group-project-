@@ -24,13 +24,19 @@ services:
   database:
     container_name: database
     image: wdennington/database:latest
-    build: ./sql
+    build: ./database
     environment:
+      MYSQL_USER: pc
+      MYSQL_PASSWORD: petclinic
       MYSQL_ROOT_PASSWORD: petclinic
-    volumes:
-    - type: bind
-      source:
-      target:
+      MYSQL_DATABASE: database
+    ports:
+    - target: 3306
+      published: 3306
+    # volumes:
+    # - type: bind
+    #   source:
+    #   target:
 
 
   
