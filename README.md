@@ -41,7 +41,7 @@ Altohugh we have only been tasked with deployment; it is worth noting the app wa
 
 ## Planning
 
-Planning for the project was done using a Jira Board as not only is it free to use but it also allowed us as a group to alter tasks between "to do", "in progress" & "done". As each individual completes their task; they would move it to the done stage before then working on a new "to do" task & placing it in the "in progress" stage.
+Planning for the project was done using a Jira Board as not only is it free to use but it also allowed us as a group to alter tasks between "to do", "in progress" & "done". As each individual completes their task; they would move it to the "done" stage before then working on a new "to do" task & placing it in the "in progress" stage.
 
 An initial jira board was made during deployment:
 
