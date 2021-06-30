@@ -32,6 +32,7 @@ The application was a website that uses CRUD functionality to allow users to add
 * [Architecture](#Architectures)
 * [Front-End Design](#Front-End-Design)
 * [Back-End Design](#Back-End-Design)
+* [Costs](#Costs)
 * [Authors](#Authors)
 
 # Software Design
@@ -60,7 +61,7 @@ Risk assessment Register:
 
 # Test Plan
 
-Test plans were also used to identify what sections of the program were expected to be tested & how
+Test plans were also used to identify what sections of the program were expected to be tested & how:
 
 
 # Continuous Integration
@@ -76,34 +77,39 @@ Shown below is the CI Pipeline for deployment of the Pet Clinic Application:
 # Architecture
 
 Reasons why we have chosen to use **Jenkins** over Azure Dev Ops for Pipeline:
-•	Jenkins is open source, easy to install and it is ‘FREE’ to use
-•	Jenkins contains a wide variety of plugins to use for automation
-•	Jenkins is available for all platforms; Windows, Linux & Mac OS
-•	Microsoft Azure DevOps has a difficult integration process with non-Microsoft products
-•	Azure Pipeline is very straightforward which makes it difficult to develop complex workflows
+* Jenkins is open source, easy to install and it is ‘FREE’ to use
+* Jenkins contains a wide variety of plugins to use for automation
+* Jenkins is available for all platforms; Windows, Linux & Mac OS
+* Microsoft Azure DevOps has a difficult integration process with non-Microsoft products
+* Azure Pipeline is very straightforward which makes it difficult to develop complex workflows
 
 
 Reasons why we have chosen **Terraform** over Ansible:
-•	Terraform allows for Orchestration as well as deployment
-•	Terraform can efficiently perform build, version and alter the infrastructure.
-•	Terraform supports multiple providers. Thus, users can handle multi-cloud environments in the same language
-•	Terraform consists of a command-line interface that can provide infrastructure in a simple code
-•	Terraform also allows for deployment of load balancers as required for this project
+* Terraform allows for Orchestration as well as deployment
+* Terraform can efficiently perform build, version and alter the infrastructure.
+* Terraform supports multiple providers. Thus, users can handle multi-cloud environments in the same language
+* Terraform consists of a command-line interface that can provide infrastructure in a simple code
+* Terraform also allows for deployment of load balancers as required for this project
 
 Reasons why we have chosen **Kubernetes** over Docker Swarm:
-•	Shows error logs and information on state of cluster resources allowing for efficient troubleshooting
-•	Kubernetes supports autoscaling on Cluster and Pod level 
-•	Although Docker swarm is easy to get started with, Kubernetes supports higher demands with more complexity
+* Shows error logs and information on state of cluster resources allowing for efficient troubleshooting
+* Kubernetes supports autoscaling on Cluster and Pod level 
+* Although Docker swarm is easy to get started with, Kubernetes supports higher demands with more complexity
 
 
 # Front End Design
 
-Below is an image showcasing an example of the front end of the application
+Below is an image showcasing an example of the front end of the application:
 
 
 # Back End Design
 
-Below is an image showcasing an example of the back end of the application
+Below is an image showcasing an example of the back end of the application:
+
+
+# Costs
+
+Running costs have also been calculated, showing our monthly estimates & how they can be improved:
 
 
 # Authors
