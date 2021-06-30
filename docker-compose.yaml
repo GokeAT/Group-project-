@@ -26,10 +26,10 @@ services:
     image: wdennington/database:latest
     build: ./database
     environment:
-      MYSQL_USER: pc
+      MYSQL_USER: root
       MYSQL_PASSWORD: petclinic
       MYSQL_ROOT_PASSWORD: petclinic
-      MYSQL_DATABASE: database
+      MYSQL_DATABASE: petclinic
     ports:
     - target: 3306
       published: 3306
