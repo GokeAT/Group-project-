@@ -108,8 +108,8 @@ Below is an image showcasing an example of the back end of the application
 
 # Authors
 
-Goke Tegbe
-Henil Soni
-Abs Pinnakoh-Morrison
-Thomas Holmes
-William Denington
+* Goke Tegbe
+* Henil Soni
+* Abs Pinnakoh-Morrison
+* Thomas Holmes
+* William Denington
