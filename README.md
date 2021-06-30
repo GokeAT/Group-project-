@@ -1,6 +1,6 @@
 # DevOps  Final Project (Group)
 
-During our training with QA to become a DevOps Engineers, for our final project we were tasked with deploying an application as a group. The applications were for the 'Spring Pet Clinic Domain'; one serving as the front end client using AngularJS whilst another an API using Java
+During our training with QA to become DevOps Engineers, for our final project we were tasked with deploying an application as a group. The applications were for the 'Spring Pet Clinic Domain'; one serving as the front end client using AngularJS whilst another an API using Java
 
 We were tasked with planning, designing & implementing a solution for automating the development workflows aswell as deployment of the application.
 
