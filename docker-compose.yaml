@@ -23,7 +23,7 @@ services:
       published: 8081
   database:
     container_name: database
-    #image:
+    image: wdennington/database:latest
     build: ./sql
     environment:
       MYSQL_ROOT_PASSWORD: petclinic
