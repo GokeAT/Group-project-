@@ -28,7 +28,9 @@ sudo groupadd docker
 sudo usermod -aG docker ${USER}
 sudo su - ${USER}
 sudo newgrp docker
-sudo apt install docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo docker-compose --version
 
 #Installs Karma
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
