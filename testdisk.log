@@ -1,0 +1,47 @@
+
+
+Wed Jun 30 11:48:22 2021
+Command line: TestDisk
+
+TestDisk 7.0, Data Recovery Utility, April 2015
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 5.4.0-1051-azure (#53~18.04.1-Ubuntu SMP Fri Jun 18 22:32:58 UTC 2021) x86_64
+Compiler: GCC 7.2
+ext2fs lib: 1.44.1, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.0
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 32 GB / 30 GiB - CHS 3916 255 63, sector size=512 - Msft Virtual Disk, FW:1.0
+Disk /dev/sdb - 17 GB / 16 GiB - CHS 2088 255 63, sector size=512 - Msft Virtual Disk, FW:1.0
+
+Partition table type (auto): EFI GPT
+Disk /dev/sda - 32 GB / 30 GiB - Msft Virtual Disk
+Partition table type: EFI GPT
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=62916607 (expected 62916607)
+hdr_lba_start=34
+hdr_lba_end=62916574
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+14 P Unknown                     2048      10239       8192
+15 P EFI System                 10240     227327     217088
+ 1 P Unknown                   227328   62916574   62689247
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=62916607 (expected 62916607)
+hdr_lba_start=34
+hdr_lba_end=62916574
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+14 P Unknown                     2048      10239       8192
+15 P EFI System                 10240     227327     217088
+ 1 P Unknown                   227328   62916574   62689247
+
+TestDisk exited normally.
