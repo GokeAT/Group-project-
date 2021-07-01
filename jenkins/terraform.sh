@@ -59,7 +59,7 @@ export KUBECONFIG=~/.kube/aksconfig
 cd ..
 
 
-az aks get-credentials --resource-group" groupproject-rg" --name "groupproject_cluster" --overwrite-existing
+az aks get-credentials --resource-group" groupproject_rg" --name "groupproject_cluster" --overwrite-existing
 
 kubectl apply -f k8s/nginx.yaml
 kubectl apply -f k8s/frontend.yaml
