@@ -43,11 +43,10 @@ export ARM_USE_MSI=true
 export ARM_SUBSCRIPTION_ID=$(az account show -o json | jq -r '.id')
 export ARM_TENANT_ID=$(az account show | jq -r '.tenantId')
 
-rm out.plan
-
 terraform init
 
- terraform plan -out plan.out 
+ terraform plan -out plan.out -destroy
+
 #-var serviceprinciple_id=${serviceprincipalclientid} \
 #     -var serviceprinciple_key="${serviceprincipalpassword}" \
 #     -var tenant_id=${serviceprincipaltenant} \
@@ -61,7 +60,7 @@ terraform apply plan.out
 cd ..
 
 
-az aks get-credentials --resource-group" groupproject_rg" --name "groupproject_cluster" --overwrite-existing
+az aks get-credentials --resource-group "groupproject_rg" --name "groupproject_cluster" --overwrite-existing
 
 kubectl apply -f k8s/nginx.yaml
 kubectl apply -f k8s/frontend.yaml
