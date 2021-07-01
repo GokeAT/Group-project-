@@ -6,6 +6,7 @@ sudo apt install -y wget unzip curl
 #Azure CLI, Login, Cluster CLI
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 az login --identity
+az login -u $AZURE_LOGIN_USR -p $AZURE_LOGIN_PSW
 sudo az aks install-cli
 
 #Installs Kubectl

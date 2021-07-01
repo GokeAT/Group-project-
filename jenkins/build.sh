@@ -1,5 +1,4 @@
 #!/bin/bash
 
 sudo docker-compose build --parallel
-#docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
-sudo docker login -u wdennington -p LongGrass
+docker login -u $DOCKER_LOGIN_USR -p $DOCKER_LOGIN_PSW
