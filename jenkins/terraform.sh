@@ -34,7 +34,7 @@ az role assignment create --assignee ${serviceprincipalclientid} \
 
 
 echo "CDing into terraform folder"
-cd ~/jenkins/Final-Project-/terraform
+cd ~/Final-Project-/terraform
 
 #terraform
 terraform init
