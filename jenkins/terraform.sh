@@ -55,18 +55,18 @@ terraform init
 
 terraform apply plan.out
 
-terraform output kube_config | grep -i -v -E '<<EOT|EOT' > ~/.kube/aksconfig
+#terraform output kube_config | grep -i -v -E '<<EOT|EOT' > ~/.kube/aksconfig
 #export KUBECONFIG=~/.kube/aksconfig
 
 cd ..
 
 
-#az aks get-credentials --resource-group" groupproject_rg" --name "groupproject_cluster" --overwrite-existing
+az aks get-credentials --resource-group" groupproject_rg" --name "groupproject_cluster" --overwrite-existing
 
 kubectl apply -f k8s/nginx.yaml
 kubectl apply -f k8s/frontend.yaml
 kubectl apply -f k8s/backend.yaml
 
 
-sed -e 's,{{MYSQL_ROOT_PASSWORD}},'$MYSQL_ROOT_PASSWORD',g;' secrets.yaml | kubectl apply -f -
+sed -e 's,{{MYSQL_ROOT_PASSWORD}},'$MYSQL_ROOT_PASSWORD',g;' k8s/secret.yaml | kubectl apply -f -
 kubectl apply -f k8s/database.yaml
