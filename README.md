@@ -66,7 +66,11 @@ Risk assessment Register:
 
 # Test Plan
 
-Test plans were also used to identify what sections of the program were expected to be tested & how:
+Test plans were also used to identify what sections of the program were expected to be tested & how
+
+Examples of some of the testing done for the application using Karma:
+
+![Screenshot (62)](https://user-images.githubusercontent.com/48153566/124113385-4b9b0480-da63-11eb-80a5-523be6ebcfa2.png)
 
 
 # Continuous Integration
