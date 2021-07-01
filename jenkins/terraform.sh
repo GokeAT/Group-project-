@@ -43,16 +43,16 @@ export ARM_USE_MSI=true
 export ARM_SUBSCRIPTION_ID=$(az account show -o json | jq -r '.id')
 export ARM_TENANT_ID=$(az account show | jq -r '.tenantId')
 
-terraform init
+terraform init -no-color
 
-terraform plan -out plan.out 
+terraform plan -out plan.out -no-color
 
 #-var serviceprinciple_id=${serviceprincipalclientid} \
 #     -var serviceprinciple_key="${serviceprincipalpassword}" \
 #     -var tenant_id=${serviceprincipaltenant} \
 #     -var subscription_id=${serviceprincipalsubscription} \
 
-terraform apply plan.out
+terraform apply plan.out -no-color
 
 #terraform output kube_config | grep -i -v -E '<<EOT|EOT' > ~/.kube/aksconfig
 #export KUBECONFIG=~/.kube/aksconfig
@@ -62,6 +62,7 @@ cd ..
 
 az aks get-credentials --resource-group "groupproject_rg" --name "groupproject_cluster" --overwrite-existing
 
+kubectl apply -f k8s/config-map.yaml
 kubectl apply -f k8s/nginx.yaml
 kubectl apply -f k8s/frontend.yaml
 kubectl apply -f k8s/backend.yaml
@@ -70,3 +71,4 @@ kubectl apply -f k8s/backend.yaml
 sed -e 's,{{MYSQL_ROOT_PASSWORD}},'$MYSQL_ROOT_PASSWORD',g;' k8s/secret.yaml | kubectl apply -f -
 
 kubectl apply -f k8s/database.yaml
+
