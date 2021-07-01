@@ -118,6 +118,16 @@ Below are images showcasing the website for the application:
 
 Running costs have also been calculated, showing our monthly estimates & how they can be improved:
 
+![s1](https://user-images.githubusercontent.com/48153566/124151636-ae53c680-da8a-11eb-8db0-27bf5b75b312.png)
+
+![s2 (2)](https://user-images.githubusercontent.com/48153566/124151662-b3187a80-da8a-11eb-9502-62472a7e7bd2.png)
+
+![s3 (2)](https://user-images.githubusercontent.com/48153566/124151664-b449a780-da8a-11eb-9306-d96181a012fc.png)
+
+![s4 (2)](https://user-images.githubusercontent.com/48153566/124151673-b57ad480-da8a-11eb-8d3d-640de8ae59d6.png)
+
+![s5 (2)](https://user-images.githubusercontent.com/48153566/124151676-b6ac0180-da8a-11eb-9743-7bee9303636c.png)
+
 
 # Authors
 
