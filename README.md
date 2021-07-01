@@ -50,9 +50,9 @@ An initial jira board was made during deployment:
 
 A new Jira board was then created after deployment had been completed:
 
-![Screenshot (56)](https://user-images.githubusercontent.com/48153566/124109470-112f6880-da5f-11eb-89af-9434c70568a9.png)
+![Screenshot (59)](https://user-images.githubusercontent.com/48153566/124109883-869b3900-da5f-11eb-9502-5af6fda50e24.png)
 
-![Screenshot (57)](https://user-images.githubusercontent.com/48153566/124109487-14c2ef80-da5f-11eb-9ea1-f1e7c52210cf.png)
+![Screenshot (58)](https://user-images.githubusercontent.com/48153566/124109895-89962980-da5f-11eb-91a9-9d19a2807640.png)
 
 
 ## Risk Assessment
