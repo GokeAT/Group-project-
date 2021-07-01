@@ -106,14 +106,13 @@ Reasons why we have chosen **Kubernetes** over Docker Swarm:
 * Although Docker swarm is easy to get started with, Kubernetes supports higher demands with more complexity
 
 
-# Front End Design
+# Website Design
 
-Below is an image showcasing an example of the front end of the application:
+Below are images showcasing the website for the application:
 
+![Screenshot (62)](https://user-images.githubusercontent.com/48153566/124119154-0fb76d80-da6a-11eb-87b8-ca87ba9de1e8.png)
 
-# Back End Design
-
-Below is an image showcasing an example of the back end of the application:
+![Screenshot (64)](https://user-images.githubusercontent.com/48153566/124119164-12b25e00-da6a-11eb-9d3d-376b08c29b5a.png)
 
 
 # Costs
