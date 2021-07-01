@@ -56,18 +56,10 @@ terraform apply plan.out
 terraform output kube_config | grep -i -v -E '<<EOT|EOT' > ~/.kube/aksconfig
 export KUBECONFIG=~/.kube/aksconfig
 
-
-# Test configuration using kubectl
-
-kubectl get nodes
-
-#cd into the yaml folders
-cd ${workspace}
-echo $(pwd)
-echo $(ls -a)
+cd ..
 
 
-#az aks get-credentials --resource-group" rg" --name "cluster name" --overwrite-existing
+az aks get-credentials --resource-group" groupproject-rg" --name "groupproject_cluster" #--overwrite-existing
 
 kubectl apply -f k8s/nginx.yaml
 kubectl apply -f k8s/frontend.yaml

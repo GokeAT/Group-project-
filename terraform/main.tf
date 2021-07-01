@@ -24,8 +24,6 @@ module "cluster" {
     project_name  = var.project_name
     group_name    = azurerm_resource_group.rg.name
     location      = var.location
-    vm_size       = var.vm_size
-    interface_ids = module.vnet.interface_ids
 }
 
 module "vnet" {
