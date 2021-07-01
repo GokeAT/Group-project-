@@ -3,6 +3,6 @@ variable "project_name" {
 }
 
 variable "location" {
-    default = "West Europe"
+    default = "UK West"
 }
 

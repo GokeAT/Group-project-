@@ -3,12 +3,12 @@ variable "group_name" {}
 
 ## Azure config variables ##
 variable location {
-  default = "Central US"
+  default = "UK West"
 }
 
 ## Resource group variables ##
 variable resource_group_name {
-  default = "groupproject-rg"
+  default = "groupproject_rg"
 }
 
 ## AKS kubernetes cluster variables ##
@@ -17,7 +17,7 @@ variable cluster_name {
 }
 
 variable "agent_count" {
-  default = 3
+  default = 1
 }
 
 variable "dns_prefix" {
