@@ -20,7 +20,7 @@ metadata:
 spec:
     containers:
     - name: database
-      #image: 
+      image: wdennington/database:latest
       ports:
       - containerPort: 3306
       env:
