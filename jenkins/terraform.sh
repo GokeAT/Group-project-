@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt  install jq
+sudo apt install jq -y
 
 # #login and follow prompts
 az login
@@ -27,6 +27,7 @@ export SERVICE_PRINCIPAL_SECRET="$(echo $SERVICE_PRINCIPAL_JSON | jq -r '.passwo
 # Grant contributor role over the subscription to our service principal
 
 echo "SETTING ROLE ASSIGNMENT"
+
 az role assignment create --assignee ${serviceprincipalclientid} \
 --scope "/subscriptions/${serviceprincipalsubscription}" \
 --role Contributor
