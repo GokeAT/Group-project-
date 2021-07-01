@@ -69,4 +69,5 @@ kubectl apply -f k8s/backend.yaml
 
 
 sed -e 's,{{MYSQL_ROOT_PASSWORD}},'$MYSQL_ROOT_PASSWORD',g;' k8s/secret.yaml | kubectl apply -f -
+
 kubectl apply -f k8s/database.yaml
