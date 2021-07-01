@@ -45,7 +45,7 @@ export ARM_TENANT_ID=$(az account show | jq -r '.tenantId')
 
 terraform init
 
- terraform plan -out plan.out -destroy
+terraform plan -out plan.out 
 
 #-var serviceprinciple_id=${serviceprincipalclientid} \
 #     -var serviceprinciple_key="${serviceprincipalpassword}" \
