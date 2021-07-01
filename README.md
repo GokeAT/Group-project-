@@ -30,8 +30,7 @@ The application was a website that uses CRUD functionality to allow users to add
     * [Test plan](#Test-plan)
 * [Conntinuous Deployment and Integration](#Continuous-Deployment-and-Integration)  
 * [Architecture](#Architectures)
-* [Front-End Design](#Front-End-Design)
-* [Back-End Design](#Back-End-Design)
+* [Website-Design](#Website-Design)
 * [Costs](#Costs)
 * [Authors](#Authors)
 
