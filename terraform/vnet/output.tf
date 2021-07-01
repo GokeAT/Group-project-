@@ -1,6 +1,6 @@
 output "interface_ids" {
     value = {
-        "public" = azurerm_network_interface.public.id
-        "private" = azurerm_network_interface.private.id
+        "public" = azurerm_network_interface.frontend.id
+        "private" = azurerm_network_interface.backend.id
     }
 }

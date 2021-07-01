@@ -14,7 +14,7 @@ resource "azurerm_subnet" "frontend" {
   address_prefixes     = ["10.0.1.0/24"]
 }
 
-resource "azurerm_public_ip" "public" {
+resource "azurerm_public_ip" "frontend" {
   name                = "${var.project_name}-frontendIP"
   resource_group_name = var.group_name
   location            = var.location
