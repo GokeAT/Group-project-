@@ -1,5 +1,5 @@
 resource "azurerm_virtual_network" "main" {
-  name                = "${var.project_name}-vnet1"
+  name                = "${var.project_name}_vnet1"
   location            = var.location
   resource_group_name = var.group_name
   address_space       = ["10.0.0.0/16"]
@@ -8,21 +8,21 @@ resource "azurerm_virtual_network" "main" {
 // Public Subnet with NSG allowing SSH from everywhere
 
 resource "azurerm_subnet" "frontend" {
-  name                 = "${var.project_name}-frontend"
+  name                 = "${var.project_name}_frontend"
   resource_group_name  = var.group_name
   virtual_network_name = azurerm_virtual_network.main.name
   address_prefixes     = ["10.0.1.0/24"]
 }
 
 resource "azurerm_public_ip" "frontend" {
-  name                = "${var.project_name}-frontendIP"
+  name                = "${var.project_name}_frontendIP"
   resource_group_name = var.group_name
   location            = var.location
   allocation_method   = "Static"
 }
 
 resource "azurerm_network_security_group" "frontend" {
-  name                = "${var.project_name}-frontend"
+  name                = "${var.project_name}_frontend"
   location            = var.location
   resource_group_name = var.group_name
 
@@ -49,7 +49,7 @@ resource "azurerm_network_interface_security_group_association" "frontend" {
 
 // Network Interface
 resource "azurerm_network_interface" "frontend" {
-  name                = "${var.project_name}-frontend"
+  name                = "${var.project_name}_frontend"
   location            = var.location
   resource_group_name = var.group_name
 
@@ -65,21 +65,21 @@ resource "azurerm_network_interface" "frontend" {
 // Private Subnet with NSG allowing SSH only from public subnet
 
 resource "azurerm_subnet" "backend" {
-  name                 = "${var.project_name}-backend"
+  name                 = "${var.project_name}_backend"
   resource_group_name  = var.group_name
   virtual_network_name = azurerm_virtual_network.main.name
   address_prefixes     = ["10.0.2.0/24"]
 }
 
 resource "azurerm_public_ip" "backend" {
-  name                = "${var.project_name}-backend"
+  name                = "${var.project_name}_backend"
   resource_group_name = var.group_name
   location            = var.location
   allocation_method   = "Static"
 }
 
 resource "azurerm_network_security_group" "backend" {
-  name                = "${var.project_name}-nsg2"
+  name                = "${var.project_name}_nsg2"
   location            = var.location
   resource_group_name = var.group_name
 
@@ -97,7 +97,7 @@ resource "azurerm_network_security_group" "backend" {
 }
 
 resource "azurerm_network_interface" "backend" {
-  name                = "${var.project_name}-backend"
+  name                = "${var.project_name}_backend"
   location            = var.location
   resource_group_name = var.group_name
 

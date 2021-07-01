@@ -15,7 +15,7 @@ provider "azurerm" {
 
 // Resource Group
 resource "azurerm_resource_group" "rg" {
-  name     = "${var.project_name}-rg"
+  name     = "${var.project_name}_rg"
   location = var.location
 }
 
