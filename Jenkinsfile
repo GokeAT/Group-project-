@@ -1,5 +1,10 @@
 pipeline {
     agent any
+    environment {
+    DOCKER_LOGIN = credentials("DOCKER_LOGIN")
+    AZURE_LOGIN = credentials("AZURE_LOGIN")
+    MYSQL_ROOT_PASSWORD = credentials("MYSQL_ROOT_PASSWORD")
+    }
     stages{
         stage('Dependencies'){
             steps{
@@ -21,11 +26,11 @@ pipeline {
                 sh "bash jenkins/push.sh"
             }
         }
-        stage('Deploy Cluster') {
-            steps {
-                sh "bash jenkins/cluster-deploy.sh"
-            }
-        }
+        // stage('Deploy Cluster') {
+        //     steps {
+        //         sh "bash jenkins/cluster-deploy.sh"
+        //     }
+        // }
         stage('Deploy') {
             steps{
                 sh "bash jenkins/terraform.sh"
