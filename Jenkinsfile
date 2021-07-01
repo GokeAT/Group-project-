@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Deploy') {
             steps{
-                sh "bash jenkins/deploy.sh"
+                sh "bash jenkins/terraform.sh"
             }
         }
     }
